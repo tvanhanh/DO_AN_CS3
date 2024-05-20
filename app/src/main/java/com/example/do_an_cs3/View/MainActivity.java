@@ -16,6 +16,7 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.example.do_an_cs3.Ardapter.DeparmentAdapter;
 import com.example.do_an_cs3.Ardapter.ViewPagerAdapter;
+import com.example.do_an_cs3.Database.Database;
 import com.example.do_an_cs3.Model.Deparments;
 import com.example.do_an_cs3.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -39,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_main);
+            Database database = new Database(this);
+            database.open();
 
             mTablayout = findViewById(R.id.tab_layout);
             mViewPager = findViewById(R.id.viewpager_2);
@@ -79,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
 
-            rcv_deparment = findViewById(R.id.rcv_deparment);
+            rcv_deparment = findViewById(R.id.rcv_department);
             LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, RecyclerView.HORIZONTAL, false);
             rcv_deparment.setLayoutManager(linearLayoutManager);
 

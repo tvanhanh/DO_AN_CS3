@@ -11,14 +11,13 @@
         android:layout_height="286dp"
         android:layout_above="@id/bottomnavigation"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="463dp"
+        android:layout_marginTop="440dp"
         android:layout_marginBottom="-92dp">
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tab_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             android:layout_marginTop="50dp"
             app:tabSelectedTextColor="@color/print">
 
@@ -60,24 +59,20 @@
         android:layout_alignTop="@+id/viewpager"
         android:layout_alignParentStart="true"
         android:layout_marginStart="0dp"
-        android:layout_marginTop="48dp" />
+        android:layout_marginTop="43dp" />
 
     <LinearLayout
         android:layout_width="400dp"
         android:layout_height="93dp"
         android:layout_above="@+id/bottomnavigation"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="182dp"
+        android:layout_marginBottom="205dp"
         android:orientation="vertical">
 
         <!-- Nội dung của mỗi item RecyclerView -->
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rcv_deparment"
+            android:id="@+id/rcv_department"
             android:layout_width="match_parent"
             android:layout_height="78dp"
-            android:layout_marginEnd="3dp"
             android:layout_marginBottom="167dp" />
     </LinearLayout>
 

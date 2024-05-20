@@ -53,10 +53,6 @@
                 android:layout_margin="5dp"
                 android:background="@drawable/icon_home"
                 android:text="." />
-
-
-
-
         </LinearLayout>
     </LinearLayout>
 
@@ -73,21 +69,37 @@
         app:menu="@menu/mune_buttom_navigation"
         tools:ignore="MissingConstraints" />
 
+
+    <EditText
+        android:id="@+id/editAddNameProject"
+        android:layout_width="369dp"
+        android:layout_height="45dp"
+        android:layout_margin="20dp"
+        android:background="@color/white"
+        android:drawablePadding="@dimen/size10dp"
+        android:hint="Tên dự án"
+        android:padding="@dimen/size10dp"
+        android:singleLine="true"
+        android:textColorHint="@color/gray"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="62dp" />
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="108dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="116dp"
         android:text="Nội dung công việc"
-        android:textSize="18dp"
         android:textColor="@color/print"
+        android:textSize="18dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <com.google.android.material.textfield.TextInputEditText
-        android:layout_width="415dp"
+        android:id="@+id/textInputEditTextDescription"
+        android:layout_width="395dp"
         android:layout_height="204dp"
         android:layout_marginBottom="284dp"
         android:background="@color/yelo"
@@ -95,15 +107,15 @@
         android:hint="Nhập nội dung ..."
         app:layout_constraintBottom_toTopOf="@+id/bottomnavigation"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.93">
+        app:layout_constraintVertical_bias="0.9">
 
     </com.google.android.material.textfield.TextInputEditText>
 
     <Button
-        android:id="@+id/buttonaddperson"
+        android:id="@+id/buttonaddTime"
         android:layout_width="161dp"
         android:layout_height="68dp"
         android:layout_marginEnd="16dp"
@@ -111,6 +123,19 @@
         android:drawablePadding="8dp"
         android:textColor="@color/blu"
         android:text="+ Thêm Thời Hạn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <Button
+        android:id="@+id/buttonaddPerson"
+        android:layout_width="161dp"
+        android:layout_height="68dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="200dp"
+        android:drawablePadding="8dp"
+        android:text="+ Chọn nhân sự thực hiện"
+        android:textColor="@color/blu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -123,5 +148,17 @@
 
         app:layout_constraintBottom_toTopOf="@+id/bottomnavigation"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="172dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="164dp"
+        android:text="Hạn:"
+        app:layout_constraintBottom_toTopOf="@+id/butonThenext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputEditText"
+        app:layout_constraintVertical_bias="0.215" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

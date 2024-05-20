@@ -3,6 +3,8 @@ package com.example.do_an_cs3.View;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,6 +13,8 @@ import com.example.do_an_cs3.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class SettingActivity extends AppCompatActivity {
+
+    private TextView logout;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting);
@@ -18,6 +22,16 @@ public class SettingActivity extends AppCompatActivity {
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomnavigation);
         MenuItem settingMenuItem = bottomNavigationView.getMenu().findItem(R.id.setting);
         settingMenuItem.setChecked(true);
+
+        logout = findViewById(R.id.logout);
+
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            Intent intent = new Intent(SettingActivity.this, LoginActivity.class);
+            startActivity(intent);
+            }
+        });
 
         // Thiết lập nghe sự kiện cho BottomNavigationView
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {

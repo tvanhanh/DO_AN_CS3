@@ -29,7 +29,14 @@
     <string name="listDepartment">CÁC BỘ PHẬN</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="expiring_soon">SẮP HẾT HẠN</string>
-    <string name="late">TRỄ HẠN</string>
 
-
+    <string name="hintEmail">Email</string>
+    <string name="hintPassword">Password</string>
+    <string name="btnRegister">Register</string>
+    <string name="textRegister">Register</string>
+    <string name="textRegisterNew">Register New</string>
+    <string name="btnLogin">Login</string>
+    <string name="textLogin">Login</string>
+    <string name="btnForgetPassword">Forget Password</string>
+    <string name="late">Late</string>
 </resources>
