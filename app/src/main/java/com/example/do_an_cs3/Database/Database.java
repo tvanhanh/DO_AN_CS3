@@ -118,7 +118,7 @@ public class Database extends SQLiteOpenHelper {
                 ")";
         db.execSQL(createTableProject_Tag);
 
-        // Tạo bảng Task_Participants
+        // Tạo bảng Task_Participants  saa
         String createTableTaskParticipants = "CREATE TABLE Task_Participants (" +
                 "task_id INTEGER, " +
                 "email TEXT, " +
